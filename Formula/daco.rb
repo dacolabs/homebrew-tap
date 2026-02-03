@@ -5,21 +5,21 @@
 class Daco < Formula
   desc "Swiss army knife for data product projects"
   homepage "https://github.com/dacolabs/cli"
-  version "0.1.2"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dacolabs/cli/releases/download/v0.1.2/daco_0.1.2_darwin_amd64.tar.gz"
-      sha256 "3374aff1ebf8a456b67d191d22acd451f653c13f67b39e38b826e24345255a3c"
+      url "https://github.com/dacolabs/cli/releases/download/v0.2.0/daco_0.2.0_darwin_amd64.tar.gz"
+      sha256 "832ba6b5a0b062f1a2b15020f48cc42b7666becd4f6171585c66b3b098ae854f"
 
       def install
         bin.install "daco"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dacolabs/cli/releases/download/v0.1.2/daco_0.1.2_darwin_arm64.tar.gz"
-      sha256 "0a867aa9c0fa77030c739fca7090cc6f866a1d780eb67c416cc7749047355b3e"
+      url "https://github.com/dacolabs/cli/releases/download/v0.2.0/daco_0.2.0_darwin_arm64.tar.gz"
+      sha256 "63cc3ef4a1ea25118a24fc7d76d53d011736b8d1d72210d7b414dc475b2b5e78"
 
       def install
         bin.install "daco"
@@ -29,15 +29,15 @@ class Daco < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dacolabs/cli/releases/download/v0.1.2/daco_0.1.2_linux_amd64.tar.gz"
-      sha256 "4125a984597277a63589bad0fec39d0c7c4882ff3b3e46321e3b87a3ea7b5111"
+      url "https://github.com/dacolabs/cli/releases/download/v0.2.0/daco_0.2.0_linux_amd64.tar.gz"
+      sha256 "cefe4a9e0bf88a61a5054fcf013f1077ca232b663fcf9848a290eda2b1f36f0b"
       def install
         bin.install "daco"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dacolabs/cli/releases/download/v0.1.2/daco_0.1.2_linux_arm64.tar.gz"
-      sha256 "4f50e26484edb317cab4d4d7d7d4b5a0c674cfa36cbfa9676cba4cec6198bfe7"
+      url "https://github.com/dacolabs/cli/releases/download/v0.2.0/daco_0.2.0_linux_arm64.tar.gz"
+      sha256 "6ac68a7f9eb0bd83d528f4c607df68cc87cce64b17b771620853887e8953424a"
       def install
         bin.install "daco"
       end

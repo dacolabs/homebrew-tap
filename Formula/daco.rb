@@ -5,23 +5,23 @@
 class Daco < Formula
   desc "Swiss army knife for data product projects"
   homepage "https://github.com/dacolabs/cli"
-  version "0.2.1"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dacolabs/cli/releases/download/v0.2.1/daco_0.2.1_darwin_amd64.tar.gz"
-      sha256 "95606a45f5f8ebe221454b4111da7b0fc6e9b1ea2c0e87481ff78acab24c7272"
+      url "https://github.com/dacolabs/cli/releases/download/v0.3.0/daco_0.3.0_darwin_amd64.tar.gz"
+      sha256 "10d255c790e72463048a7f0e52f8f715b6233b636b8972affd22d70c05338b38"
 
-      def install
+      define_method(:install) do
         bin.install "daco"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dacolabs/cli/releases/download/v0.2.1/daco_0.2.1_darwin_arm64.tar.gz"
-      sha256 "d9d2a7d8a79680440fe83759b8ea3042e9e6f30667447d73fadaa35df7ed4736"
+      url "https://github.com/dacolabs/cli/releases/download/v0.3.0/daco_0.3.0_darwin_arm64.tar.gz"
+      sha256 "dcf13ea25356a7e61cb6f329e6eb0c76efda4e086a5003f03a7b53c732c49ebc"
 
-      def install
+      define_method(:install) do
         bin.install "daco"
       end
     end
@@ -29,16 +29,16 @@ class Daco < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dacolabs/cli/releases/download/v0.2.1/daco_0.2.1_linux_amd64.tar.gz"
-      sha256 "67d761d09fb0797c946191b6b63fb9b649fdcc380c4d1ef46c35b732c59ce140"
-      def install
+      url "https://github.com/dacolabs/cli/releases/download/v0.3.0/daco_0.3.0_linux_amd64.tar.gz"
+      sha256 "c30d224be0f665bda69dcf6dfe127a10430ede2208c45ae1dc13b62807da7650"
+      define_method(:install) do
         bin.install "daco"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dacolabs/cli/releases/download/v0.2.1/daco_0.2.1_linux_arm64.tar.gz"
-      sha256 "8c85276bee9ed3620455dcf34642ec15b820c22ebedd01bdddad8b27617ec1a0"
-      def install
+      url "https://github.com/dacolabs/cli/releases/download/v0.3.0/daco_0.3.0_linux_arm64.tar.gz"
+      sha256 "398915d8a8dfe82829f9d8033b6727a50da486660500e6e02f0047aa81ccd255"
+      define_method(:install) do
         bin.install "daco"
       end
     end

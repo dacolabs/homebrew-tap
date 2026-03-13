@@ -5,21 +5,21 @@
 class Daco < Formula
   desc "Swiss army knife for data product projects"
   homepage "https://github.com/dacolabs/cli"
-  version "0.3.2"
+  version "0.3.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dacolabs/cli/releases/download/v0.3.2/daco_0.3.2_darwin_amd64.tar.gz"
-      sha256 "78e1632ff132d770f9e7e1c9c4dfc06e9901a0baf1031cf8f90044f3d48dfee9"
+      url "https://github.com/dacolabs/cli/releases/download/v0.3.3/daco_0.3.3_darwin_amd64.tar.gz"
+      sha256 "d1ac263e4ffe7bf86d3beb8d257abd6def5193062527a5c834aa7178f08b7f52"
 
       define_method(:install) do
         bin.install "daco"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dacolabs/cli/releases/download/v0.3.2/daco_0.3.2_darwin_arm64.tar.gz"
-      sha256 "c01c8bc46bb023e1ead95a7952e4f7fd8a2feea5c2eaa48e22e92a5b2f877278"
+      url "https://github.com/dacolabs/cli/releases/download/v0.3.3/daco_0.3.3_darwin_arm64.tar.gz"
+      sha256 "03112e4fb70f8d6659eb4c4a46872edd3400bf923ff1107ae0db2611cd4ba564"
 
       define_method(:install) do
         bin.install "daco"
@@ -29,15 +29,15 @@ class Daco < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dacolabs/cli/releases/download/v0.3.2/daco_0.3.2_linux_amd64.tar.gz"
-      sha256 "1bff04ca6c226c9ce1ca0492d647a86a7ff2e39ace26f950ac09763b5ebe2508"
+      url "https://github.com/dacolabs/cli/releases/download/v0.3.3/daco_0.3.3_linux_amd64.tar.gz"
+      sha256 "213bee6fbb89510dc9c90bddc45fa527885b7cb7f54e9ee80afd4c1780957ea5"
       define_method(:install) do
         bin.install "daco"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dacolabs/cli/releases/download/v0.3.2/daco_0.3.2_linux_arm64.tar.gz"
-      sha256 "6f5fb5f4d02123607233c849264c12d0641823d97a26a6d2e892cb13d1a3b837"
+      url "https://github.com/dacolabs/cli/releases/download/v0.3.3/daco_0.3.3_linux_arm64.tar.gz"
+      sha256 "1fcb07b4236615bab0126cd0255b80cf9ab3b9dd3fe458395fc72988723b2d51"
       define_method(:install) do
         bin.install "daco"
       end
